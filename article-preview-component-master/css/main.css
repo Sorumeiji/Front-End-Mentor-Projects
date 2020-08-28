@@ -1,0 +1,139 @@
+/* 
+    Variable Fonts - Open Type
+    CSS Shapes
+    Flexbox
+    CSS Grids
+    BEM
+    A11y  Complience
+*/
+
+/*  GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+body {
+    padding: 5%;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-content: center;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 800px;
+    padding: 5%;
+    position: relative;
+}
+
+.drawer--img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.text {}
+
+.text>p {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.profile {
+    display: flex;
+    width: 100%;
+    min-height: 1px;
+    padding: 5%;
+
+}
+
+.profile--img {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.profile--caption {
+    display: flex;
+    flex-flow: column;
+}
+
+.profile--dot {}
+
+.social {
+    display: flex;
+}
+
+
+.activeState {
+    display: none;
+}
+
+
+.shareIcon {
+    background-color: hsl(210, 46%, 95%);
+    text-align: center;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: 0.5em;
+
+}
+
+.attribution {}
+
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 375px;
+        display: grid;
+        place-items: center;
+    }
+
+    .drawer--img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+}
